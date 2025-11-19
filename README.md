@@ -43,7 +43,6 @@ From the repository root:
 This will produce an executable JAR in target/ (app.jar)
 
 ### Build with Docker
-- Built the Docker image: docker compose built
 - Start the application: docker compose up
 
 ### Run locally
