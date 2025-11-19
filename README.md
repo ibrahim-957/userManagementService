@@ -100,4 +100,5 @@ Add example curl calls:
 
 # SWAGGER UI
 ## http://localhost:8080/swagger-ui/index.html
+
 ## https://usermanagementservice-0w9o.onrender.com/swagger-ui/index.html
