@@ -12,6 +12,7 @@ A lightweight Java-based User Management Service providing RESTful APIs for user
 - [Run locally](#run-locally)
 - [Configuration](#configuration)
 - [API](#api)
+- [ENDPOINT](#endpoint)
 - [SWAGGER UI](#swagger-ui)
 
 
@@ -43,7 +44,6 @@ From the repository root:
 This will produce an executable JAR in target/ (app.jar)
 
 ### Build with Docker
-- Built the Docker image: docker compose built
 - Start the application: docker compose up
 
 ### Run locally
@@ -64,7 +64,12 @@ Common configuration items:
 - DATASOURCE_PASSWORD / 12345
 
 ## API
+Use the base URL depending on where you run the service:
+- Local: http://localhost:8080/api/users
+- Render: https://usermanagementservice-0w9o.onrender.com/health
+- Render: https://usermanagementservice-0w9o.onrender.com/api/users
 
+## ENDPOINT
 - POST /api/users
     - Create a new user
     - Request body: {"username": "EvaBaker", "email": "eva.baker@example.com", "phoneNumber": "+358401234567", "role": "ADMIN"}
@@ -95,3 +100,4 @@ Add example curl calls:
 
 # SWAGGER UI
 ## http://localhost:8080/swagger-ui/index.html
+## https://usermanagementservice-0w9o.onrender.com/swagger-ui/index.html
