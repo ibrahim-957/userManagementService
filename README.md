@@ -46,22 +46,12 @@ This will produce an executable JAR in target/ (app.jar)
 ### Build with Docker
 - Start the application: docker compose up
 
-### Run locally
-Run the built jar:
-
-java -jar target/app.jar
-
-The service will start and listen on the configured port
-
 ## Configuration
-The service reads configuration from:
-- application.yml
-
+### Render
 Common configuration items:
-- SERVER_PORT (default 8080)
-- DATABASE_URL / jdbc:postgresql://localhost:5432/user_db
-- DATASOURCE_USERNAME / postgres
-- DATASOURCE_PASSWORD / 12345
+- SPRING_DATASOURCE_URL / jdbc:postgresql://dpg-d4f0jks9c44c73clbqn0-a.oregon-postgres.render.com:5432/user_db_f6vu
+- SPRING_DATASOURCE_USERNAME / user_db_f6vu_user
+- SPRING_DATASOURCE_PASSWOR / yu32W4ArPH6zHuRf5EpHpCkoxLCFNU3p
 
 ## API
 Use the base URL depending on where you run the service:
